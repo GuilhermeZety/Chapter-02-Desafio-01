@@ -12,11 +12,14 @@ export const ProductList = styled.ul`
     flex-direction: column;
     background: #fff;
     border-radius: 4px;
-    padding: 20px;
+    padding: 20px;    
+    width: 28vw;
+    max-width: 300px;
 
     img {
       align-self: center;
       max-width: 250px;
+      width: 28vw;
     }
 
     > strong {
@@ -64,6 +67,21 @@ export const ProductList = styled.ul`
         text-align: center;
         font-weight: bold;
       }
+    }
+  }
+
+  @media(max-width: 768px){    
+    display: flex;
+    flex-direction: column;
+
+    li{
+      width: 100%;
+      max-width: 100%;
+    }
+
+    img{
+      width: 100%;
+      max-width: 100%;
     }
   }
 `;

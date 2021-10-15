@@ -11,6 +11,7 @@ export const Container = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
+    grid-gap: 1rem;
 
     button {
       background: #7159c1;
@@ -92,6 +93,30 @@ export const ProductTable = styled.table`
       svg {
         color: ${lighten(0.25, '#7159c1')};
         cursor: not-allowed;
+      }
+    }
+  }
+
+  @media(max-width: 768px){
+
+    tbody {      
+      font-size: 0.8rem;
+    }
+
+    tbody td{
+      padding: 0;
+    }
+    thead th{
+      padding: 0;
+    }
+    img {
+      height: 80px;
+    }
+    div{
+      flex-direction: column-reverse;
+
+      input{        
+        width: 30px;
       }
     }
   }
